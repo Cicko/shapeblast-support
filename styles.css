@@ -1,0 +1,83 @@
+:root {
+  color-scheme: light;
+  --ink: #1d1236;
+  --muted: #5b5175;
+  --pink: #e8246f;
+  --violet: #7a3fd4;
+  --line: #e6dcf3;
+  --wash: #f8f5fd;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display", "Segoe UI", sans-serif;
+  background: var(--wash);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+a { color: var(--violet); }
+
+header {
+  background: linear-gradient(135deg, #2b1263 0%, #7a3fd4 55%, #e8246f 100%);
+  color: white;
+  padding: 48px 24px 42px;
+}
+
+.wrap { max-width: 840px; margin: 0 auto; }
+
+.brand { display: flex; align-items: center; gap: 11px; font-size: 21px; font-weight: 800; }
+.brand-mark { width: 32px; height: 32px; border-radius: 11px; background: rgba(255,255,255,.18); display: grid; place-items: center; font-size: 16px; }
+
+nav { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 24px; }
+nav a { color: white; font-weight: 650; text-decoration: none; opacity: .92; }
+nav a:hover { opacity: 1; text-decoration: underline; }
+
+main { max-width: 840px; margin: 0 auto; padding: 48px 24px 64px; }
+
+.card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 16px 50px rgba(74, 40, 130, .08);
+}
+
+.hero h1 { font-size: clamp(34px, 8vw, 56px); line-height: 1.05; margin: 0 0 16px; }
+.hero p { font-size: 20px; color: rgba(255,255,255,.9); max-width: 620px; margin: 0; }
+
+h1, h2, h3 { line-height: 1.15; }
+h1 { margin: 0 0 14px; font-size: 40px; }
+h2 { margin-top: 34px; font-size: 24px; }
+.card > h2:first-child { margin-top: 0; }
+h3 { margin: 22px 0 4px; font-size: 18px; }
+p, li { color: var(--muted); }
+
+.contact {
+  background: linear-gradient(125deg, #fde8f1, #efe7ff);
+  border: 1px solid #e3d3f6;
+  border-radius: 18px;
+  padding: 24px;
+  margin-top: 22px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 17px;
+  color: white;
+  background: linear-gradient(90deg, var(--pink), var(--violet));
+  border-radius: 12px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+footer { max-width: 840px; margin: 0 auto; padding: 0 24px 38px; color: var(--muted); font-size: 14px; }
+
+@media (max-width: 540px) {
+  header { padding-top: 34px; }
+  .card { padding: 23px; border-radius: 18px; }
+  main { padding-top: 30px; }
+}
