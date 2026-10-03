@@ -1,3 +1,3 @@
-# Shape Blast Support
+# Tessel Blocks Support
 
-Support page and privacy policy for the Shape Blast iOS game, served with GitHub Pages at https://cicko.github.io/shapeblast-support/.
+Support page and privacy policy for the Tessel Blocks iOS game, served with GitHub Pages at https://cicko.github.io/tesselblocks-support/.
